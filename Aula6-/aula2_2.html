@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatizando</title>
+    <style>
+        body{font: normal 22pt times new roman; color:yellow; background-color: brown;}
+    </style>
+</head>
+<body>
+ 
+    <script> //serve para preencher frases prontas com variaveis dos prompts
+        var nome =  window.prompt('Qual é o seu nome?')
+        var pokemon = window.prompt(`${nome} Qual seu Pokémon favorito?`)
+        document.write(`Olá ${nome}! <br/> Seu nome tem ${nome.length} letras <br/>`)
+        document.write(`Seu nome em maiuscúlo é ${nome.toLocaleUpperCase()}<br/>`)
+        document.write(`Agora em minusculo é ${nome.toLocaleLowerCase()}<br/>`)
+        document.write(`Seu pokémon favorito é o ${pokemon.toLocaleUpperCase()}`)
+        
+    </script>
+</body>
+</html>

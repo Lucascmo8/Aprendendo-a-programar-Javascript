@@ -1,0 +1,31 @@
+body {
+    background-color: #D4E79E;
+    font: normal 21pt arial;
+    color: #501537;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    color: #501537;
+  }
+
+  input{ 
+    background:rgba(255, 0, 0, 0);
+    border-style: double;
+    border-color: #922D50 ;
+    color: #501537;
+    font-size: 20px;
+    box-shadow: 4px 4px 5px #f2407f ;
+    text-shadow: 1px 1px 2px #f2407f;
+    border-radius: 8px;
+    margin-right: 10px;
+    text-align: center;
+    box-align: initial;
+  }
+  ul {
+      list-style:none;
+      list-style-position: inside;
+      display: flex;
+      margin: auto;
+  }

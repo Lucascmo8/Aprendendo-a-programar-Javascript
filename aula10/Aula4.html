@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+      div#area{
+         background: gray; 
+         color: yellow;
+         width: 200px;
+         height:200px;
+         line-height: 200px;
+         text-align: center;
+
+        }
+        div#nova{
+         background: black; 
+         color: yellow;
+         width: 200px;
+         height:200px;
+         line-height: 200px;
+         text-align: center;
+         margin-top: 10px;
+
+        }
+
+        body{ 
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+
+ <div id="area">
+    Interação
+ </div>
+
+ <div id = "nova"> vem cá </div>
+
+ <script>
+     var a = window.document.getElementById('area')
+     a.addEventListener('click',clicar)
+     a.addEventListener('mouseenter',entrar)
+     a.addEventListener('mouseout',saida)
+
+  function clicar() {
+     
+      a.innerText = 'sai'
+      a.style.background = 'green'
+  }
+  function entrar() {
+     a.innerText = 'Clica'
+     a.style.background = 'Pink'
+  }
+  function saida() {
+      a.innerText = 'volta...'
+      a.style.background = 'gray'
+  }
+
+     var b = window.document.getElementById('nova')
+     b.addEventListener('mouseenter', entrarb)
+    // b.addEventListener('mousemove', ue )
+     b.addEventListener('mouseout', sair)
+     b.addEventListener('click', clicarb )
+     b.addEventListener('dblclick', click2)
+
+     function entrarb() {
+         b.innerText = 'clica'
+         b.style.color = 'purple'
+         b.style.background = 'green'
+         b.style.font = '25pt'
+     }
+    /* function ue() {
+         b.innerText = 'mexe ai'
+         b.style.color = 'blue'
+         b.style.background = 'orange'
+     }*/
+
+     function sair() {
+         b.innerText = 'Fim'
+         b.style.color = 'red'
+         b.style.background = 'blue'
+             
+    }
+    
+    function clicarb() {
+       b.innerText = 'Retire-se'
+    }
+
+    function click2() {
+        b.innerText = 'hack'
+        b.style = 'pink'
+        b.style.background = 'black'
+
+    }
+     
+ </script>
+</body>
+</html>

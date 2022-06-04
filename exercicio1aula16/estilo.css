@@ -1,0 +1,28 @@
+header {
+    font: normal 25pt times new roman;
+    color: blue;
+    text-align: center;
+}
+
+section {
+    background: rgb(63, 63, 255);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(190, 21, 21, 0.804);
+    text-align:justify;
+}
+
+body { 
+    background: orange;
+    font: normal 15pt arial;
+    color: rgb(55, 2, 2);
+}
+
+footer {
+    color: blue;
+    text-align: center;
+    font-style: italic;
+    margin-top: 12px;
+}

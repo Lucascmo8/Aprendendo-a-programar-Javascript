@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(15, 175, 234);
+            color: gray;
+            font: normal 20 pt times new roman;
+        }
+
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Agora eu vou ter o DOM</h1>
+    <p><strong>Ladies and Gentlemen</strong></p>
+    <p>Come on?</p>
+    <p>é isso aí</p>
+    <div id='msg'><i>Clica aqui</i></div>
+    <p id='fim'>Tá acabando</p>
+    <p id= "ultimo"> aqui</p>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('ta indo?<br/>')
+        p1.style.color = 'yellow'
+        p1.style.background = 'red'
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        p2.style.color = 'red'
+        p2.style.background = 'yellow'
+        var d = window.document.getElementById('msg')
+        document.write(p2.innerText)
+        d.style.background = 'green'
+        d.style.color = 'black'
+        d.innerText = 'opa...'
+
+        var p3 = window.document.querySelector('p.ultimo')
+        p3.innerHTML = 'que isso...'
+
+
+
+        /*var d = window.document.querySelector('div.msg')
+        d.style.background = 'black'*/
+    </script>
+
+</body>
+
+</html>

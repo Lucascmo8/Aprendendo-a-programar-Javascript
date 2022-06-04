@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou Gringo</title>
+</head>
+<body>
+ <h1>Brasileiro ou Gringo?</h1>
+ <p>De onde você é ?</p>
+R: <input type="text" name="voce" id="voce" >,
+<input type="button" value="sou" onclick="sou()">
+<div id = "res"></div>
+
+    <script>
+        function sou(){
+            var voc = window.document.getElementById('voce')
+            var res = window.document.getElementById('res')
+            var lugar = String(voce.value.toLocaleUpperCase())
+            res.innerHTML = `<p>Você é de ${lugar.toLocaleUpperCase()}</p>`
+            if (lugar != 'BRASIL') { res.innerHTML +=`<p>Você é gringo</p>`} else{ res.innerHTML+=`<p>Você é Brasileiro</p>`}
+        }
+
+    </script>
+</body>
+</html>

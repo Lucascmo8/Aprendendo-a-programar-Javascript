@@ -1,0 +1,28 @@
+h1 { color: black;
+text-align: center;}
+
+body { background: rgb(129, 5, 237);
+font: normal 16pt times new roman;
+color: black;
+}
+
+section { background: rgb(74, 146, 246) ;
+font: normal 12pt arial;
+border-radius: 10px;
+padding: 14px;
+width: 65%;
+margin:auto;
+color:black;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);}
+
+div{ text-align: center;}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+ }
+
+footer { color:black;
+text-align: center;
+font-style: italic;}
